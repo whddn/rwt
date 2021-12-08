@@ -48,7 +48,8 @@ main { width: 700px; float: left; padding: 20px; }
   #wrap { width: 100%; margin: 0; border: 0; }
   #mainHeader { height: 85px; background: #2b2d36; }
   #mainHeader h1 { padding-top: 10px; font-size: 40px; }
-  #nav ul li { width: 100%; float: none; padding: 15px 20px 0; }
+  #nav ul li { width: 100%; float: none; padding: 15px 20px 0;
+              box-sizing: border-box; }
   #nav ul li a { border: 1px solid #ccc; border-radius: 10px;
                 line-height: 40px;
                 background: #fff; color: #263652; }
