@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+address { font-style: normal; }
+small { font-size: 1em; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트 */
+body { font-family: 'Nanum Gothic', sans-serif;
+background: linear-gradient(180deg, #6ed6ed 0%, #fff 300px) no-repeat; }
+/* 1024이상 전체영역 */
+#wrap { width: 960px; margin: 8px auto 0;
+        border: 1px solid #bababa; background: #fff; }
+/* 메인헤더 */
+#mainHeader { height: 279px; background: url(images/bg_header.png) no-repeat; }
+#mainHeader h1 { padding: 35px 0 0 20px; color: #ff0; font-size: 60px; }
+/* 네비 */
+#nav { overflow: hidden; }
+#nav ul li { width: 25%; float: left; }
+#nav ul li a { display: block;
+          text-align: center; line-height: 60px;
+          background: #033682; color: #fff; }
+#nav ul li a:hover { background: #fff; color: #000;
+                  font-weight: bold; }
+/* 메인본문 */
+main { width: 700px; float: left; padding: 20px; }
+/* #content {  } */
+#content h3 { margin: 21px 0; }
+#content p { margin-bottom: 15px; line-height: 18px; }
+/* 사진 */
+#photo { width: 220px; float: right; padding: 20px 0;
+        text-align: center; background: #dfd; }
+/* 푸터 */
+#footer { clear: both; padding: 30px 0;
+        text-align: center; line-height: 30px;
+        background: #0b1625; color: #fff; }
+/* 600-1023 */
+@media all and (max-width: 1023px) /*and (min-width: 600px)*/ {
+  #wrap { width: 580px; }
+  main { width: auto; float: none; }
+  #photo { width: auto; float: none; }
+  #photo img { width: 176px; }
+}
+/* 599 이하 */
+@media all and (max-width: 599px ) {
+  body { background: none; }
+  #wrap { width: 100%; margin: 0; border: 0; }
+  #mainHeader { height: 85px; background: #2b2d36; }
+  #mainHeader h1 { padding-top: 10px; font-size: 40px; }
+  #nav ul li { width: 100%; float: none; padding: 15px 20px 0; }
+  #nav ul li a { border: 1px solid #ccc; border-radius: 10px;
+                line-height: 40px;
+                background: #fff; color: #263652; }
+  #photo img { width: 80%; }
+}
